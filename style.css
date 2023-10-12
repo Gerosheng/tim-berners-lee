@@ -1,7 +1,7 @@
-body{
+body {
   margin: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
 }
 
@@ -9,6 +9,15 @@ body{
 .topnav {
   overflow: hidden;
   background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.nav-logo {
+  color: white;
+  background-color: transparent;
+  height: 20px;
+  width: auto;
 }
 
 .topnav a {
@@ -21,17 +30,18 @@ body{
   text-decoration: none;
 }
 /*DROPDOWNS*/
-.dropdown{
+.dropdown {
   float: left;
   overflow: hidden;
 }
 
-.logdropdown{
+.logdropdown {
   float: right;
   overflow: hidden;
 }
 
-.dropdown .browsebtn, .logdropdown .loginbtn{
+.dropdown .browsebtn,
+.logdropdown .loginbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -41,16 +51,18 @@ body{
   font-family: inherit;
   margin: 0;
 }
-.navbar a:hover, .dropdown:hover .browsebtn {
+.navbar a:hover,
+.dropdown:hover .browsebtn {
   background-color: red;
 }
 
-.dropdown-content, .logdropdown-content {
+.dropdown-content,
+.logdropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -63,11 +75,13 @@ body{
   text-align: left;
 }
 
-.dropdown-content a:hover, .logdropdown-content a:hover {
+.dropdown-content a:hover,
+.logdropdown-content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content, .logdropdown:hover .logdropdown-content {
+.dropdown:hover .dropdown-content,
+.logdropdown:hover .logdropdown-content {
   display: block;
 }
 
@@ -77,7 +91,7 @@ body{
   display: block;
 }
 
-.topnav input[type=text] {
+.topnav input[type="text"] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
@@ -99,73 +113,79 @@ body{
   background: #ccc;
 }
 
-#subscribe-btn{
+#subscribe-btn {
   float: right;
   padding: 8px;
   background-color: red;
   color: white;
   border-radius: 10%;
-  margin-top:8px;
+  margin-top: 8px;
 }
 
-main{
-  display: flex;
-  flex-direction: row;
+/**MAIN**/
+main {
+  background-color: rgb(238, 238, 238);
 }
 
-
-
+/**BREADCRUMB**/
 .breadcrumb-navigation {
+  display: flex;
   margin-top: 0;
   padding: 10px 18px;
   background-color: rgb(238, 238, 238);
 }
 
-.breadcrumb-navigation>li {
+.breadcrumb-navigation > li {
   display: block;
 }
 
-.breadcrumb-navigation>li>a {
+.breadcrumb-navigation > li > a {
   color: #5a5a5a;
   text-decoration: none;
 }
 
-.breadcrumb-navigation>li>a:hover {
+.breadcrumb-navigation > li > a:hover {
   color: #6fc302;
 }
 
-.breadcrumb-navigation li+li:before {
+.breadcrumb-navigation li + li:before {
   padding: 4px;
   content: ">";
 }
 
-.reading-zone{
+/**READINGZONE**/
+.container-reading-zone {
+  display: flex;
+  flex-direction: row;
+}
+
+.reading-zone {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: auto;
+  background-color: white;
+  margin-left: 10px;
   margin-right: auto;
   padding: 20px;
+  max-width: 40%;
 }
 
-.Timpicture{
+.Timpicture {
   max-width: 100%;
   max-height: auto;
 }
 
-.topic-header{
+.topic-header {
   display: block;
 }
 
-
-.topic-content{
+.topic-content {
   display: flex;
   flex-direction: row-reverse;
 }
 
-
-.info-card{
-  
+/**INFOCARD**/
+.info-card {
   border: 1px solid #ddd;
   margin-left: auto;
   margin-right: auto;
@@ -174,30 +194,31 @@ main{
   max-width: 100%;
 }
 
-.info-card-figure{
+.info-card-figure {
   border: 1px solid #ddd;
   border-radius: 0.5rem;
   padding: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
 }
-#info-card-media{
+#info-card-media {
   color: #14599d;
   text-decoration: none;
   text-align: center;
   padding: 10px 0;
 }
 
-.info-card-details{
+.info-card-details {
   border-top: 1px solid #ddd;
 }
 
-.info-card-details button{
+.info-card-details button {
   border: 1px solid #ddd;
   border-radius: 0.5rem;
   padding: 0.75rem 1.25rem;
   align-items: center;
 }
 
-.main-text{
+/**TEXT**/
+.main-text {
   line-height: 1.6;
 }
