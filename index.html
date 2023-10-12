@@ -1,107 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Berners Lee Mockup</title>
+
     
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script type="module" crossorigin src="./assets/index-843c6bbe.js"></script>
-    <link rel="stylesheet" href="./assets/index-12c6683f.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="./assets/index-9a7e3f8f.js"></script>
+    <link rel="stylesheet" href="./assets/index-2b34806c.css">
   </head>
   <body>
     <header>
       <nav class="topnav">
-        
-          <a href="index.html"> Britannica</a>
-          <div class="dropdown"> 
-            <button class="browsebtn">Browse</button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+        <a href="index.html">
+          <img
+            loading="lazy"
+            src="https://cdn.britannica.com/mendel/eb-logo/MendelNewThistleLogo.png"
+            alt="Encyclopedia Britannica"
+            class="nav-logo"
+          />
+        </a>
+        <!-- <i class="fas fa-user-circle"></i> -->
+        <div class="dropdown">
+          <button class="browsebtn">
+            <i class="fas fa-bars hamburger-icon"></i> Browse
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
           </div>
-          <div class="search-container">
-            <form action="xxx">
-              <input type="text" placeholder="Search" name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>   
-          </div>
-          <a href="">Dictionary</a>
-          <a href="">Quizzes</a>
-          <a href="">Money</a>
-          <div class="logdropdown"> 
-            <button class="loginbtn">Login</button>
-              <div class="logdropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-          </div>
-          <a href="" id="subscribe-btn">Subscribe</a>
+        </div>
 
+        <div class="search-container">
+          <form action="xxx">
+            <button type="submit">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+            <input type="text" placeholder="Search" name="search" />
+          </form>
+        </div>
+
+        <a href="">Dictionary</a>
+        <a href="">Quizzes</a>
+        <a href="">Money</a>
+
+        <div class="logdropdown">
+          <button class="loginbtn">
+            Login<i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="logdropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href="" id="subscribe-btn">Subscribe</a>
       </nav>
+    </header>
 
+    <main>
       <ul class="breadcrumb-navigation">
         <li><a href="home">Home</a></li>
         <li><a href="webdev">Science</a></li>
         <li><a href="frontenddev">Mathematics</a></li>
       </ul>
 
-    </header>
-    
-    <main>
+      <section class="container-reading-zone">
+        <section class="reading-zone">
+          <section class="topic-header">
+            <button class="science-tech">
+              <a href="xxx">Sciences & Tech</a>
+            </button>
 
-      <section class="topic-header">
-        <h1>Tim Berners-Lee</h1>
+            <h1>Tim Berners-Lee</h1>
 
-        <h2>British Scientist</h2>
+            <h2>British Scientist</h2>
 
-        <button>Print</button>
-        <button>Cite</button>
-        <button>Share</button>
-        <button>Feedback</button>
-        <button>...(popover)</button>
+            <button>Print</button>
+            <button>Cite</button>
+            <button>Share</button>
+            <button>Feedback</button>
+            <button>...(popover)</button>
 
-        <p><i>Also known as: Sir Tim Berners-Lee</i></p>
-        <p>Written by <a href="xxx">Michael Aaron Dennis</a></p>
-        <p>Fact-checked by <a href="xxx">The Editors of Encyclopaedia Britannica</a></p> 
-        <p>Last Updated: <a href="xxx">Article History</a></p>
+            <p><i>Also known as: Sir Tim Berners-Lee</i></p>
+            <p>Written by <a href="xxx">Michael Aaron Dennis</a></p>
+            <p>
+              Fact-checked by
+              <a href="xxx">The Editors of Encyclopaedia Britannica</a>
+            </p>
+            <p>Last Updated: <a href="xxx">Article History</a></p>
 
+            <section class="table-content-btn">
+              <button>Table of content</button>
+            </section>
+
+            <section class="audio-section">
+              <audio controls autoplay>
+                <source src="xxx" type="audio/ogg" />
+                <source src="xxx" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </section>
+          </section>
+
+          <section class="topic-content">
+            <article class="info-card">
+              <figure class="info-card-figure">
+                <img
+                  src="./assets/British-scientist-Tim-Berners-Lee-f729e8ad.webp"
+                  alt="Tim Berners-Lee"
+                  class="Timpicture"
+                />
+                <figcaption>Tim Berners-Lee</figcaption>
+              </figure>
+
+              <a href="xxx" id="info-card-media"><b>See all media</b></a>
+
+              <article class="info-card-details">
+                <p>
+                  <b>Category:</b
+                  ><a href="xxx" id="science-tech-link">Science & Tech</a>
+                </p>
+                <p><b>In Full:</b> Sir Tim Berners-Lee</p>
+                <p>
+                  <b>Born:</b> June 8, 1955, <a href="xxx">London</a>,
+                  <a href="xxx">England</a> (age 68)
+                </p>
+                <a href="xxx"><button>See all related content →</button></a>
+              </article>
+            </article>
+
+            <article class="main-text">
+              <p>
+                <strong> Berners-Lee</strong>, in full
+                <strong> Tim Berners-Lee</strong>, (born June 8, 1955,
+                <a href="xxx">London</a>, England), British computer scientist,
+                generally
+                <a href="xxx" style="text-decoration: dotted">credited</a> as
+                the inventor of the <a href="xxx">Wolrd Wide Web</a>. In 2004 he
+                was awarded a knighthood by Queen <a href="xxx">Elizabeth</a> II
+                of the United Kingdom and the inaugural Millennium Technology
+                Prize (€1 million) by the Finnish Technology Award Foundation.
+              </p>
+
+              <p>
+                Computing came naturally to Berners-Lee, as both of his parents
+                worked on the <a href="xxx">Ferranti</a> Mark I, the first
+                commercial computer. (See <a href="xxx">computer</a>: The first
+                stored-program machines.) After graduating in 1976 from the
+                <a href="xxx">University</a> of Oxford, Berners-Lee designed
+                computer <a href="xxx">software</a> for two years at Plessey
+                Telecommunications Ltd., located in <a href="xxx">Poole</a>,
+                Dorset, <a href="xxx">England</a>. Following this, he had
+                several positions in the computer industry, including a stint
+                from June to December 1980 as a software engineering consultant
+                at <a href="xxx">CERN</a>, the European
+                <a href="xxx">particle</a> physics laboratory in
+                <a href="xxx">Geneva</a>.
+              </p>
+            </article>
+          </section>
+        </section>
       </section>
-
-      <section class="topic-content">
-
-        <article class="info-card">
-          <figure class="info-card-figure">
-            <img src="./assets/British-scientist-Tim-Berners-Lee-f729e8ad.webp" alt="Tim Berners-Lee" class="Timpicture">
-            <figcaption>Tim Berners-Lee</figcaption>
-          </figure>
-          <a href="xxx" id="info-card-media">See all media</a>
-          <hr>
-          <p><b>Category:</b><a href="xxx" id="science-tech-link">Science & Tech</a></p>
-          <p><b>In Full:</b> Sir Tim Berners-Lee</p>
-          <p><b>Born:</b> June 8, 1955, <a href="xxx">London</a>, <a href="xxx">England</a> (age 68)</p>
-          <a href="xxx"><button>See all related content →</button></a>
-        </article>
-
-        <article class="main-text">
-          <p><strong> Berners-Lee</strong>, in full <strong> Tim Berners-Lee</strong>, (born June 8, 1955, <a href="xxx">London</a>, England), British computer scientist, 
-          generally <a href="xxx" style="text-decoration: dotted;">credited</a> as the inventor of the <a href="xxx">Wolrd Wide Web</a>. In 2004 he was awarded a knighthood by Queen <a href="xxx">Elizabeth</a> II 
-          of the United Kingdom and the inaugural Millennium Technology Prize (€1 million) by the Finnish Technology Award Foundation.</p>
-
-          <p>Computing came naturally to Berners-Lee, as both of his parents worked on the <a href="xxx">Ferranti</a> Mark I, the first commercial computer. 
-          (See <a href="xxx">computer</a>: The first stored-program machines.) After graduating in 1976 from the <a href="xxx">University</a> of Oxford, Berners-Lee designed computer 
-          <a href="xxx">software</a> for two years at Plessey Telecommunications Ltd., located in <a href="xxx">Poole</a>, Dorset, <a href="xxx">England</a>. Following this, he had several positions 
-          in the computer industry, including a stint from June to December 1980 as a software engineering consultant at <a href="xxx">CERN</a>, the European <a href="xxx">particle</a> 
-          physics laboratory in <a href="xxx">Geneva</a>.</p>
-        </article>
-
-      </section>
-
     </main>
     
-
   </body>
 </html>
